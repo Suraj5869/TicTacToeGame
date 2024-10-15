@@ -53,15 +53,16 @@ namespace TicTacToe.Controllers
             switch (choice) 
             {
                 case 1:
-                    Console.Clear();
-                    AppUI.StartApp();
+                    Console.Clear();//clear the console
+                    AppUI.StartApp();//If player wants to play again then it again start the app from beginning
                     break;
                 case 2:
-                    Environment.Exit(0);
+                    Environment.Exit(0);//If player does not want to play again then it exits the game
                     break;
             }
         }
 
+        //Resets all value to play again
         internal static void Reset()
         {
             win = 0;
